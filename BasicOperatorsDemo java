@@ -1,0 +1,12 @@
+public class BasicOperatorsDemo
+{
+    public static void main(String[] args) 
+    {
+        //Addition example
+        int numberOne = 5;
+        int numberTwo = 2;
+        int result;
+        result = numberOne + numberTwo;
+        System.out.println("Addition is " + result);
+    }
+}
