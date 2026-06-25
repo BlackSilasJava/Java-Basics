@@ -2,11 +2,33 @@ public class BasicOperatorsDemo
 {
     public static void main(String[] args) 
     {
+        //ARITHMETIC OPERATORS
+
         //Addition example
         int numberOne = 5;
         int numberTwo = 2;
-        int result;
-        result = numberOne + numberTwo;
-        System.out.println("Addition is " + result);
+        int resultA;
+        resultA = numberOne + numberTwo;
+        System.out.println("Addition is " + resultA);
+
+        //Substraction example
+        int resultS;
+        resultS = numberOne - numberTwo;
+        System.out.println("Substraction is " + resultS);
+
+        //Multiplication example
+        int resultM;
+        resultM = numberOne * numberTwo;
+        System.out.println("Multiplication is " + resultM);
+
+        //Division example
+        int resultD;
+        resultD = numberOne / numberTwo;
+        System.out.println("Division is " + resultD);
+
+        //Modulus example
+        int resultMd;
+        resultMd = numberOne % numberTwo;
+        System.out.println("Remainder is " + resultMd);
     }
 }
