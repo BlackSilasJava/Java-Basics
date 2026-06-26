@@ -30,5 +30,12 @@ public class BasicOperatorsDemo
         int resultMd;
         resultMd = numberOne % numberTwo;
         System.out.println("Remainder is " + resultMd);
+
+
+        //COMPARISON OPERATORS
+
+        //Greater-than example
+        int requiredAge = 18;
+        System.out.println("Age is greater than 18: " + requiredAge > 18);
     }
 }
