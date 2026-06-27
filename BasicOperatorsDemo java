@@ -2,6 +2,9 @@ public class BasicOperatorsDemo
 {
     public static void main(String[] args) 
     {
+        
+        System.out.println("OPERAND 5 and 2"); 
+
         //ARITHMETIC OPERATORS
 
         //Addition example
@@ -34,8 +37,32 @@ public class BasicOperatorsDemo
 
         //COMPARISON OPERATORS
 
+        System.out.println(" "); // Create space
+        System.out.println("THE INPUTTED AGE IS 18");
+        
         //Greater-than example
         int requiredAge = 18;
-        System.out.println("Age is greater than 18: " + requiredAge > 18);
+        boolean resultG = requiredAge > 18;
+        System.out.println("Age is greater than 18: " + resultG);
+   
+        //Less-than example
+        boolean resultL = requiredAge < 18;
+        System.out.println("Age is less than 18: " + resultL);
+     
+        //Equal-to example
+        boolean resultE = requiredAge == 18;
+        System.out.println("Age is equal to 18: " + resultE);
+     
+        //Not-equal-to example
+        boolean resultN = requiredAge != 18;
+        System.out.println("Age is not equal to 18: " + resultN);
+        
+        //Greater-than-or-equal-to example
+        boolean resultGE = requiredAge >= 18;
+        System.out.println("Age is greater than or equal to 18: " + resultGE);
+
+        //Less-than-or-equal-to example
+        boolean resultLE = requiredAge <= 18;
+        System.out.println("Age is less than or equal to 18: " + resultLE);
     }
 }
