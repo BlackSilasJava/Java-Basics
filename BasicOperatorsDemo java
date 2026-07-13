@@ -64,5 +64,28 @@ public class BasicOperatorsDemo
         //Less-than-or-equal-to example
         boolean resultLE = requiredAge <= 18;
         System.out.println("Age is less than or equal to 18: " + resultLE);
+
+
+        //COMPARISON OPERATORS
+        System.out.println(" "); // Create space
+        boolean var = true;
+        boolean varTwo = false;
+
+        //Logical AND example
+        System.out.println("Performing Logical AND - " + (var && varTwo));
+
+       //Logical OR example
+        System.out.println("Performing Logical OR - " + (var || varTwo));
+
+       //Logical NOT example
+        System.out.println("Performing Logical NOT - " + (!var));
+
+
+       //Another Logical example
+       int numOne = 7;
+       int numTwo = 3;
+       boolean LGresult;
+       LGresult = (numOne > numTwo || numOne < numTwo);
+System.out.println("Result is - " + LGresult);
     }
 }
