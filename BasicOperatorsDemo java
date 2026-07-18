@@ -66,7 +66,7 @@ public class BasicOperatorsDemo
         System.out.println("Age is less than or equal to 18: " + resultLE);
 
 
-        //COMPARISON OPERATORS
+        //LOGICAL OPERATORS
         System.out.println(" "); // Create space
         boolean var = true;
         boolean varTwo = false;
@@ -87,5 +87,59 @@ public class BasicOperatorsDemo
        boolean LGresult;
        LGresult = (numOne > numTwo || numOne < numTwo);
 System.out.println("Result is - " + LGresult);
+
+
+
+       //ASSIGNMENT OPERATORS
+
+        System.out.println(" "); // Create space
+       int productOne, productTwo, totalProducts, deliveryFee;
+float completePackage, halfPackage, multiPackage, sharedPackage, remainingBalance;
+
+       productOne = 57;
+       productTwo = 98;
+       deliveryFee = 8;
+       totalProducts = productOne + productTwo; // 155
+
+       // =============================
+       // += Addition Assignment Operator
+       // Add delivery fee to the total price
+       // =============================
+       totalProducts += deliveryFee; // 155 + 8 = 163
+       completePackage = totalProducts;
+       System.out.println("Final price: " + completePackage);
+
+       // =============================
+       // -= Subtraction Assignment Operator
+       // Remove delivery fee from the total price
+       // =============================
+       totalProducts -= deliveryFee; // 163 - 8 = 155
+       halfPackage = totalProducts;
+       System.out.println("Without delivery: " + halfPackage);
+
+       // =============================
+       // *= Multiplication Assignment Operator
+       // Customer buys 2 complete packages
+       // =============================
+       totalProducts += deliveryFee; // Back to 163
+       totalProducts *= 2; // 163 × 2 = 326
+       multiPackage = totalProducts;
+       System.out.println("Price for 2 packages: " + multiPackage);
+
+       // =============================
+       // /= Division Assignment Operator
+       // Split the total between 2 people
+       // =============================
+       totalProducts /= 2; // 326 ÷ 2 = 163
+       sharedPackage = totalProducts;
+       System.out.println("Each person pays: " + sharedPackage);
+
+       // =============================
+       // %= Modulus Assignment Operator
+       // Find the remaining balance after dividing by 50
+       // =============================
+       totalProducts %= 50; // 163 % 50 = 13
+       remainingBalance = totalProducts;
+       System.out.println("Remaining balance: " + remainingBalance);
     }
 }
