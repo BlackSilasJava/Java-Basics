@@ -1,145 +1,303 @@
 public class BasicOperatorsDemo
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        
-        System.out.println("OPERAND 5 and 2"); 
 
-        //ARITHMETIC OPERATORS
+System.out.println("ARITHMETIC OPERATORS (Operands: 5 and 2)");
+        System.out.println("--------------------------------");  
+//ARITHMETIC OPERATORS  
 
-        //Addition example
-        int numberOne = 5;
-        int numberTwo = 2;
-        int resultA;
-        resultA = numberOne + numberTwo;
-        System.out.println("Addition is " + resultA);
+System.out.println("--------------------------------");  
+      
+//Variables Declaration  
+    int additionResult;  
+    int subtractionResult;  
+    int multiplicationResult;  
+    int divisionResult;  
+    int modulusResult;  
+      
+//Addition example  
+    int numberOne = 5;  
+    int numberTwo = 2;  
 
-        //Substraction example
-        int resultS;
-        resultS = numberOne - numberTwo;
-        System.out.println("Substraction is " + resultS);
+    additionResult = numberOne + numberTwo;  
+    System.out.println("Addition is " + additionResult);  
 
-        //Multiplication example
-        int resultM;
-        resultM = numberOne * numberTwo;
-        System.out.println("Multiplication is " + resultM);
+//Subtraction example  
+    subtractionResult = numberOne - numberTwo;  
+    System.out.println("Subtraction is " + subtractionResult);  
 
-        //Division example
-        int resultD;
-        resultD = numberOne / numberTwo;
-        System.out.println("Division is " + resultD);
+//Multiplication example  
+    multiplicationResult = numberOne * numberTwo;  
+    System.out.println("Multiplication is " + multiplicationResult);  
 
-        //Modulus example
-        int resultMd;
-        resultMd = numberOne % numberTwo;
-        System.out.println("Remainder is " + resultMd);
+//Division example  
+    divisionResult = numberOne / numberTwo;  
+    System.out.println("Division is " + divisionResult);  
+
+//Modulus example  
+    modulusResult = numberOne % numberTwo;  
+    System.out.println("Remainder is " + modulusResult);  
+
+    System.out.println("--------------------------------");  
+//COMPARISON OPERATORS  
+    System.out.println("--------------------------------");  
+
+    System.out.println(); // Create space  
+    System.out.println("COMPARISON OPERATORS (The Entered Age is 18)");  
+    System.out.println("--------------------------------");  
+    System.out.println("--------------------------------");  
+
+//Greater-than example  
+    int requiredAge = 18;  
+    boolean resultG = requiredAge > 18;  
+    System.out.println("Age is greater than 18: " + resultG);  
+
+//Less-than example  
+    boolean resultL = requiredAge < 18;  
+    System.out.println("Age is less than 18: " + resultL);  
+
+//Equal-to example  
+    boolean resultE = requiredAge == 18;  
+    System.out.println("Age is equal to 18: " + resultE);  
+
+//Not-equal-to example  
+    boolean resultN = requiredAge != 18;  
+    System.out.println("Age is not equal to 18: " + resultN);  
+
+//Greater-than-or-equal-to example  
+    boolean resultGE = requiredAge >= 18;  
+    System.out.println("Age is greater than or equal to 18: " + resultGE);  
+
+//Less-than-or-equal-to example  
+    boolean resultLE = requiredAge <= 18;  
+    System.out.println("Age is less than or equal to 18: " + resultLE);  
 
 
-        //COMPARISON OPERATORS
+    System.out.println("--------------------------------");  
+//LOGICAL OPERATORS  
+    System.out.println("--------------------------------");  
+      
+    System.out.println(); // Create space  
+    System.out.println("LOGICAL OPERATORS (isLoggedIn: True and hasPermission: False)");  
+    System.out.println("--------------------------------");  
+    System.out.println("--------------------------------");  
+      
+    boolean isLoggedIn = true;  
+    boolean hasPermission = false;  
 
-        System.out.println(" "); // Create space
-        System.out.println("THE INPUTTED AGE IS 18");
-        
-        //Greater-than example
-        int requiredAge = 18;
-        boolean resultG = requiredAge > 18;
-        System.out.println("Age is greater than 18: " + resultG);
+//Logical AND example  
+    System.out.println("Performing Logical AND - ");  
+    System.out.println("User is logged in AND has permission - " + (isLoggedIn && hasPermission));  
+
+//Logical OR example  
+    System.out.println("Performing Logical OR - ");  
+    System.out.println("User is logged in OR has permission - " + (isLoggedIn || hasPermission));  
+
+//Logical NOT example  
+    System.out.println("Performing Logical NOT - ");  
+    System.out.println("User is not logged in - " + !isLoggedIn);  
+      
+//Another Logical NOT example  
+    System.out.println("Checking Logical NOT status - ");  
+    System.out.println("User is logged in - " + isLoggedIn);  
+      
+//Another Logical NOT example  
+    System.out.println("Performing another Logical NOT - ");  
+    System.out.println("User does not have permission - " + !hasPermission);  
+      
+//Another Logical NOT example  
+    System.out.println("Performing another Logical NOT - ");  
+    System.out.println("User has permission - " +  hasPermission);  
+      
+//Another Logical AND example  
+    System.out.println("Performing Another Logical AND - ");  
+    System.out.println("User is not logged in and has permission - " + (!isLoggedIn && hasPermission));  
+      
+//Another Logical AND example  
+    System.out.println("Performing Another Logical AND - ");  
+    System.out.println("User is logged in and doesn't have permission - " + (isLoggedIn && !hasPermission));    
+
+    System.out.println("--------------------------------");  
+//Another Logical example  
+    System.out.println("COMPARING STUFF (numOne: 7 and numTwo: 3)");  
+    int numOne = 7;  
+    int numTwo = 3;  
+    boolean logicalResult;  
+    System.out.println("First approach");  
+    logicalResult = (numOne > numTwo || numOne < numTwo);  
+    System.out.println("Is numOne greater than numTwo OR Is numOne less than numTwo - ");  
+    System.out.println("Result is - " + logicalResult);  
+    
+//Another approach   
+    System.out.println("Second approach");  
+    logicalResult = (numOne > numTwo) && (numOne != numTwo);  
+    System.out.println("Is numOne greater than numTwo AND Is numOne NOT EQUAL to numTwo - ");  
+    System.out.println("Logical result: " + logicalResult);  
    
-        //Less-than example
-        boolean resultL = requiredAge < 18;
-        System.out.println("Age is less than 18: " + resultL);
+//Another approach   
+    System.out.println("Third approach");  
+    logicalResult = (numOne > numTwo) && (numOne == numTwo);  
+    System.out.println("Is numOne greater than numTwo AND Is numOne EQUAL to numTwo - ");  
+    System.out.println("Logical result: " + logicalResult);  
+ 
+//Another approach   
+    System.out.println("Fourth approach");  
+    logicalResult = (numOne < numTwo) && (numOne == numTwo);  
+    System.out.println("Is numOne less than numTwo AND Is numOne EQUAL to numTwo - ");  
+    System.out.println("Logical result: " + logicalResult);  
+ 
+//Another approach   
+    System.out.println("Fifth approach");
+    logicalResult = (numOne < numTwo) && (numOne != numTwo);  
+    System.out.println("Is numOne less than numTwo AND Is numOne NOT EQUAL to numTwo - ");  
+    System.out.println("Logical result: " + logicalResult);  
+ 
+//Another approach   
+    System.out.println("Sixth approach");  
+    logicalResult = (numOne > numTwo) && (numOne != 0);  
+    System.out.println("Is numOne greater than numTwo AND Is numOne NOT EQUAL to 0 - ");  
+    System.out.println("Logical result: " + logicalResult);  
+
+    System.out.println("--------------------------------");  
+
+//ASSIGNMENT OPERATORS  
+    System.out.println("--------------------------------");  
+
+    System.out.println(); // Create space  
+
+System.out.println("ASSIGNMENT OPERATORS");  
+    System.out.println("--------------------------------");  
+    System.out.println("--------------------------------");  
+      
+    int productOne, productTwo, totalProducts, deliveryFee;  
+    double completePackage, halfPackage, multiPackage, multiPackageWithoutDelivery, sharedPackage, sharedPackageWithoutDelivery, remainingBalance, remainingBalance1;  
+    productOne = 57;  
+    productTwo = 98;  
+    deliveryFee = 8;  
+    totalProducts = productOne + productTwo; // 155  
+
+// =============================  
+// += Addition Assignment Operator  
+// Add delivery fee to the total price  
+// =============================  
+   totalProducts += deliveryFee; // 155 + 8 = 163  
+   completePackage = totalProducts;  
+   System.out.println("Final price: " + completePackage);  
+
+// =============================  
+// -= Subtraction Assignment Operator  
+// Remove delivery fee from the total price  
+// =============================  
+   totalProducts -= deliveryFee; // 163 - 8 = 155  
+   halfPackage = totalProducts;  
+   System.out.println("Without delivery: " + halfPackage);  
+
+// =============================  
+// *= Multiplication Assignment Operator  
+// Customer buys 2 complete packages  
+// =============================  
+   totalProducts += deliveryFee; // Back to 163  
+   totalProducts *= 2; // 163 × 2 = 326  
+   multiPackage = totalProducts;  
+   System.out.println("Price for 2 packages: " + multiPackage);  
+
+// =============================  
+// /= Division Assignment Operator  
+   // Split the total between 2 people  
+// =============================  
+   totalProducts /= 2; // 326 ÷ 2 = 163  
+   sharedPackage = totalProducts;  
+   System.out.println("Each person pays: " + sharedPackage);  
+
+// =============================  
+// %= Modulus Assignment Operator  
+// Find the remaining balance after dividing by 50  
+// =============================  
+   totalProducts %= 50; // 163 % 50 = 13  
+   remainingBalance = totalProducts;  
+   System.out.println("Remaining balance: " + remainingBalance);  
      
-        //Equal-to example
-        boolean resultE = requiredAge == 18;
-        System.out.println("Age is equal to 18: " + resultE);
+    System.out.println();  
+    System.out.println("SAME EXAMPLES WITH ANOTHER APPROACH");  
+  
+// =============================  
+// Assignment Operator  
+// Total price  
+// =============================  
      
-        //Not-equal-to example
-        boolean resultN = requiredAge != 18;
-        System.out.println("Age is not equal to 18: " + resultN);
-        
-        //Greater-than-or-equal-to example
-        boolean resultGE = requiredAge >= 18;
-        System.out.println("Age is greater than or equal to 18: " + resultGE);
+   totalProducts = productOne + productTwo; // reset to 155  
+   System.out.println("Final price: " + totalProducts);  
+  
+// =============================  
+// += Addition Assignment Operator  
+// Add delivery fee to the total price  
+// =============================  
+     
+   totalProducts = productOne + productTwo; // reset to 155  
+   totalProducts += deliveryFee; // 155 + 8 = 163  
+   completePackage = totalProducts;  
+   System.out.println("Final price with delivery: " + completePackage);  
 
-        //Less-than-or-equal-to example
-        boolean resultLE = requiredAge <= 18;
-        System.out.println("Age is less than or equal to 18: " + resultLE);
+// =============================  
+// -= Subtraction Assignment Operator  
+// Remove delivery fee from the total price  
+// =============================  
+   completePackage -= deliveryFee; // 163 - 8 = 155  
+   halfPackage = completePackage;  
+   System.out.println("Final price Without delivery: " + halfPackage);  
 
+// =============================  
+// *= Multiplication Assignment Operator  
+   // Customer buys 2 complete packages
 
-        //LOGICAL OPERATORS
-        System.out.println(" "); // Create space
-        boolean var = true;
-        boolean varTwo = false;
+// =============================
+totalProducts = productOne + productTwo; // reset to 155
+totalProducts += deliveryFee; // Back to 163
+totalProducts *= 2; // 163 × 2 = 326
+multiPackage = totalProducts;
+System.out.println("Price for 2 packages with delivery: " + multiPackage);
 
-        //Logical AND example
-        System.out.println("Performing Logical AND - " + (var && varTwo));
+// Customer buys 2 packages without delivery
+totalProducts = productOne + productTwo; // reset to 155
+totalProducts *= 2; // 155 × 2
+multiPackageWithoutDelivery = totalProducts;
+System.out.println("Price for 2 packages without delivery: " + multiPackageWithoutDelivery);
 
-       //Logical OR example
-        System.out.println("Performing Logical OR - " + (var || varTwo));
+// =============================
+// /= Division Assignment Operator
+totalProducts = productOne + productTwo; // reset to 155
+totalProducts += deliveryFee;
+totalProducts /= 2; // 163 ÷ 2 = 81
+sharedPackage = totalProducts;
+System.out.println("With delivery fee, Each person pays: " + sharedPackage);
 
-       //Logical NOT example
-        System.out.println("Performing Logical NOT - " + (!var));
+// Split the total between 2 people without delivery
+// =============================
+totalProducts = productOne + productTwo; // reset to 155
+totalProducts /= 2; // 155 ÷ 2 = 77
+sharedPackageWithoutDelivery = totalProducts;
+System.out.println("Without delivery fee, Each person pays: " + sharedPackageWithoutDelivery);
 
+// =============================
+// %= Modulus Assignment Operator
+// Find the remaining balance with delivery fee after dividing by 50
+// =============================
+totalProducts = productOne + productTwo; // reset to 155
+totalProducts += deliveryFee;
+totalProducts %= 50; // 163 % 50 = 13
+remainingBalance = totalProducts;
+System.out.println("Remaining balance with delivery fee: " + remainingBalance);
 
-       //Another Logical example
-       int numOne = 7;
-       int numTwo = 3;
-       boolean LGresult;
-       LGresult = (numOne > numTwo || numOne < numTwo);
-System.out.println("Result is - " + LGresult);
+// Find the remaining balance without delivery fee after dividing by 50
+// =============================
+totalProducts = productOne + productTwo; // reset to 155
+totalProducts %= 50; // 155 % 50 = 5
+remainingBalance1 = totalProducts;
+System.out.println("Remaining balance without delivery fee: " + remainingBalance1);
 
+System.out.println("--------------------------------");  
+    System.out.println("--------------------------------");  
+}
 
-
-       //ASSIGNMENT OPERATORS
-
-        System.out.println(" "); // Create space
-       int productOne, productTwo, totalProducts, deliveryFee;
-float completePackage, halfPackage, multiPackage, sharedPackage, remainingBalance;
-
-       productOne = 57;
-       productTwo = 98;
-       deliveryFee = 8;
-       totalProducts = productOne + productTwo; // 155
-
-       // =============================
-       // += Addition Assignment Operator
-       // Add delivery fee to the total price
-       // =============================
-       totalProducts += deliveryFee; // 155 + 8 = 163
-       completePackage = totalProducts;
-       System.out.println("Final price: " + completePackage);
-
-       // =============================
-       // -= Subtraction Assignment Operator
-       // Remove delivery fee from the total price
-       // =============================
-       totalProducts -= deliveryFee; // 163 - 8 = 155
-       halfPackage = totalProducts;
-       System.out.println("Without delivery: " + halfPackage);
-
-       // =============================
-       // *= Multiplication Assignment Operator
-       // Customer buys 2 complete packages
-       // =============================
-       totalProducts += deliveryFee; // Back to 163
-       totalProducts *= 2; // 163 × 2 = 326
-       multiPackage = totalProducts;
-       System.out.println("Price for 2 packages: " + multiPackage);
-
-       // =============================
-       // /= Division Assignment Operator
-       // Split the total between 2 people
-       // =============================
-       totalProducts /= 2; // 326 ÷ 2 = 163
-       sharedPackage = totalProducts;
-       System.out.println("Each person pays: " + sharedPackage);
-
-       // =============================
-       // %= Modulus Assignment Operator
-       // Find the remaining balance after dividing by 50
-       // =============================
-       totalProducts %= 50; // 163 % 50 = 13
-       remainingBalance = totalProducts;
-       System.out.println("Remaining balance: " + remainingBalance);
-    }
 }
